@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Literary Haven - Poetry Collection</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">
+          <img
+            src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=100&h=100&fit=crop&crop=center"
+            class="logo-img"
+            alt="Logo"
+          />
+          Literary Haven
+        </a>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+          <li><a href="poetries.html" class="nav-link active">Poetry</a></li>
+          <li><a href="stories.html" class="nav-link">Stories</a></li>
+          <li><a href="novels.html" class="nav-link">Novels</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Poetry Section -->
+    <section class="section" style="padding-top: 100px">
+      <div class="container">
+        <h2 class="section-title">Poetry Collection</h2>
+        <p class="section-subtitle">
+          Explore our curated collection of poetic expressions that capture the
+          soul
+        </p>
+
+        <div class="content-grid">
+          <!-- Poetry cards (You can generate these dynamically using JavaScript or server-side code) -->
+
+          <!-- Sample Entry -->
+          <div class="content-card">
+            <div class="card-header">
+              <h3 class="card-title">Echoes in the Wind</h3>
+              <div class="card-meta">
+                <i class="fas fa-calendar"></i> Jan 2, 2025 |
+                <i class="fas fa-feather-alt"></i> Nature
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                A gentle reflection on the silent conversations between the
+                trees and the breeze.
+              </p>
+              <div class="card-actions">
+                <a
+                  href="https://example.com/poetry/echoes-in-the-wind"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                  >Read Poem</a
+                >
+                <span class="tag tag-success">Featured</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Repeat similar blocks for each of your 100 poetry links -->
+          <!-- You may automate this with JS or a CMS -->
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Literary Haven</h4>
+            <p>
+              Your premier destination for literary excellence. We craft stories
+              that inspire, educate, and entertain readers around the world.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link" title="Medium">
+                <i class="fab fa-medium"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="poetries.html">Poetry</a></li>
+              <li><a href="stories.html">Stories</a></li>
+              <li><a href="novels.html">Novels</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="services.html">Writing Services</a></li>
+              <li><a href="services.html">Editorial Services</a></li>
+              <li><a href="services.html">Content Creation</a></li>
+              <li><a href="services.html">Workshops</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul class="footer-links">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="contact-us.html">Get In Touch</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Literary Haven. All rights reserved. | Designed with
+            passion for literature.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" title="Back to Top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      const header = document.getElementById("header");
+      const backToTop = document.getElementById("back-to-top");
+
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+      });
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+          backToTop.classList.add("visible");
+        } else {
+          header.classList.remove("scrolled");
+          backToTop.classList.remove("visible");
+        }
+      });
+
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+    </script>
+  </body>
+</html>

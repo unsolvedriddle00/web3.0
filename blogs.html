@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Literary Haven - Professional Blogs & Articles</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <meta
+      name="description"
+      content="Explore our comprehensive collection of literary blogs, articles, and thought-provoking content from industry experts and emerging voices."
+    />
+    <meta
+      name="keywords"
+      content="literary blogs, writing articles, literature, creative writing, author insights"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">
+          <img
+            src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=100&h=100&fit=crop&crop=center"
+            class="logo-img"
+            alt="Literary Haven Logo"
+          />
+          Literary Haven
+        </a>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="blogs.html" class="nav-link active">Blogs</a></li>
+          <li><a href="poetries.html" class="nav-link">Poetry</a></li>
+          <li><a href="stories.html" class="nav-link">Stories</a></li>
+          <li><a href="novels.html" class="nav-link">Novels</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="faq.html" class="nav-link">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Hero Section for Blogs -->
+    <section
+      class="hero"
+      style="
+        min-height: 110vh;
+        background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      "
+    >
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Literary Insights & Perspectives</h1>
+          <p class="hero-subtitle">
+            Discover thought-provoking articles, expert analyses, and creative
+            explorations
+          </p>
+          <p class="hero-description">
+            Dive into our extensive collection of over 100 carefully curated
+            blogs covering literature, writing techniques, industry insights,
+            and creative inspiration from renowned authors and emerging voices.
+          </p>
+          <div class="cta-buttons">
+            <a href="#featured-blogs" class="btn btn-primary">
+              <i class="fas fa-star"></i> Featured Articles
+            </a>
+            <a href="#all-blogs" class="btn btn-outline">
+              <i class="fas fa-book-open"></i> Browse All Blogs
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Breadcrumb Navigation -->
+    <div class="container" style="padding-top: 2rem">
+      <nav class="breadcrumb">
+        <div class="breadcrumb-item">
+          <a href="index.html" class="breadcrumb-link">Home</a>
+        </div>
+        <div class="breadcrumb-item active">Blogs</div>
+      </nav>
+    </div>
+
+    <!-- Blog Statistics -->
+    <section
+      class="section"
+      style="
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        background: var(--bg-secondary);
+      "
+    >
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-item animate-pulse">
+            <span class="stat-number">100+</span>
+            <span class="stat-label">Published Articles</span>
+          </div>
+          <div class="stat-item animate-pulse">
+            <span class="stat-number">25K+</span>
+            <span class="stat-label">Monthly Readers</span>
+          </div>
+          <div class="stat-item animate-pulse">
+            <span class="stat-number">15</span>
+            <span class="stat-label">Expert Authors</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Search and Filter Section -->
+    <section class="section" style="padding-top: 2rem; padding-bottom: 2rem">
+      <div class="container">
+        <div class="search-container">
+          <div class="search-icon">
+            <i class="fas fa-search"></i>
+          </div>
+          <input
+            type="text"
+            class="search-input"
+            id="blog-search"
+            placeholder="Search blogs by title, author, or topic..."
+            autocomplete="off"
+          />
+        </div>
+
+        <!-- Filter Tags -->
+        <div style="text-align: center; margin-top: 2rem">
+          <h4 style="margin-bottom: 1rem; color: var(--primary-color)">
+            Filter by Category:
+          </h4>
+          <div class="filter-tags">
+            <button class="tag tag-primary filter-btn active" data-filter="all">
+              All Blogs
+            </button>
+            <button class="tag filter-btn" data-filter="writing">
+              Writing Tips
+            </button>
+            <button class="tag filter-btn" data-filter="tech">
+              Technology
+            </button>
+            <button class="tag filter-btn" data-filter="literature">
+              Literature
+            </button>
+            <button class="tag filter-btn" data-filter="creativity">
+              Creativity
+            </button>
+            <button class="tag filter-btn" data-filter="industry">
+              Industry
+            </button>
+            <button class="tag filter-btn" data-filter="interviews">
+              Interviews
+            </button>
+            <button class="tag filter-btn" data-filter="reviews">
+              Reviews
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Blogs Section -->
+    <section
+      class="section"
+      id="featured-blogs"
+      style="background: var(--bg-secondary)"
+    >
+      <div class="container">
+        <h2 class="section-title">Featured Articles</h2>
+        <p class="section-subtitle">
+          Hand-picked selections from our most popular and impactful blog posts
+        </p>
+
+        <div class="content-grid">
+          <div class="content-card featured-card">
+            <div
+              class="card-header"
+              style="
+                background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+              "
+            >
+              <h3 class="card-title">The Future of Digital Storytelling</h3>
+              <div class="card-meta">
+                <i class="fas fa-calendar"></i> Dec 15, 2024 |
+                <i class="fas fa-user"></i> Sarah Mitchell |
+                <i class="fas fa-eye"></i> 5.2K views
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                Explore how emerging technologies are reshaping narrative
+                experiences and what it means for authors and readers in the
+                digital age.
+              </p>
+              <div class="progress" style="margin: 1rem 0">
+                <div class="progress-bar" style="width: 95%"></div>
+              </div>
+              <div class="card-actions">
+                <a
+                  href="pdfs/digital-storytelling.pdf"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                >
+                  <i class="fas fa-file-pdf"></i> Read Full Article
+                </a>
+                <div>
+                  <span class="tag tag-primary">Featured</span>
+                  <span class="tag">Tech</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-card featured-card">
+            <div class="card-header">
+              <h3 class="card-title">Mastering Character Development</h3>
+              <div class="card-meta">
+                <i class="fas fa-calendar"></i> Dec 10, 2024 |
+                <i class="fas fa-user"></i> Marcus Chen |
+                <i class="fas fa-eye"></i> 4.8K views
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                A comprehensive guide to creating compelling, multi-dimensional
+                characters that resonate with readers and drive your narrative
+                forward.
+              </p>
+              <div class="progress" style="margin: 1rem 0">
+                <div class="progress-bar" style="width: 90%"></div>
+              </div>
+              <div class="card-actions">
+                <a
+                  href="pdfs/character-development.pdf"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                >
+                  <i class="fas fa-file-pdf"></i> Read Full Article
+                </a>
+                <div>
+                  <span class="tag tag-success">Popular</span>
+                  <span class="tag">Writing</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="content-card featured-card">
+            <div class="card-header">
+              <h3 class="card-title">Publishing Industry Trends 2025</h3>
+              <div class="card-meta">
+                <i class="fas fa-calendar"></i> Jan 2, 2025 |
+                <i class="fas fa-user"></i> Elena Rodriguez |
+                <i class="fas fa-eye"></i> 3.9K views
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                Industry insights and predictions for the publishing landscape,
+                including market trends, reader preferences, and emerging
+                opportunities.
+              </p>
+              <div class="progress" style="margin: 1rem 0">
+                <div class="progress-bar" style="width: 85%"></div>
+              </div>
+              <div class="card-actions">
+                <a
+                  href="pdfs/publishing-trends-2025.pdf"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                >
+                  <i class="fas fa-file-pdf"></i> Read Full Article
+                </a>
+                <div>
+                  <span class="tag tag-warning">New</span>
+                  <span class="tag">Industry</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- All Blogs Section -->
+    <section class="section" id="all-blogs">
+      <div class="container">
+        <h2 class="section-title">Complete Blog Collection</h2>
+        <p class="section-subtitle">
+          Explore our comprehensive library of articles, insights, and creative
+          perspectives
+        </p>
+
+        <!-- Loading indicator -->
+        <div
+          id="loading-indicator"
+          class="loading"
+          style="display: none; text-align: center; padding: 2rem"
+        >
+          <i
+            class="fas fa-spinner fa-spin fa-2x"
+            style="color: var(--secondary-color)"
+          ></i>
+          <p>Loading articles...</p>
+        </div>
+
+        <div class="content-grid" id="blog-grid">
+          <!-- Enhanced Blog Cards -->
+          <div
+            class="content-card blog-item"
+            data-category="writing"
+            data-title="understanding ai in 2025"
+            data-author="john doe"
+          >
+            <div class="card-header">
+              <h3 class="card-title">Understanding AI in Creative Writing</h3>
+              <div class="card-meta">
+                <i class="fas fa-calendar"></i> Jan 5, 2025 |
+                <i class="fas fa-user"></i> John Doe |
+                <i class="fas fa-clock"></i> 8 min read
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                A comprehensive exploration of how artificial intelligence is
+                transforming the creative writing landscape, from ideation to
+                publication.
+              </p>
+              <div class="card-actions">
+                <a
+                  href="pdfs/understanding-ai.pdf"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                >
+                  <i class="fas fa-file-pdf"></i> Read PDF
+                </a>
+                <div>
+                  <span class="tag">Writing</span>
+                  <span class="tag">Tech</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="content-card blog-item"
+            data-category="literature"
+            data-title="classical literature modern relevance"
+            data-author="marie johnson"
+          >
+            <div class="card-header">
+              <h3 class="card-title">
+                Classical Literature's Modern Relevance
+              </h3>
+              <div class="card-meta">
+                <i class="fas fa-calendar"></i> Dec 28, 2024 |
+                <i class="fas fa-user"></i> Marie Johnson |
+                <i class="fas fa-clock"></i> 12 min read
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                Examining how timeless themes from classical works continue to
+                resonate with contemporary readers and inform modern
+                storytelling.
+              </p>
+              <div class="card-actions">
+                <a
+                  href="pdfs/classical-literature.pdf"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                >
+                  <i class="fas fa-file-pdf"></i> Read PDF
+                </a>
+                <div>
+                  <span class="tag">Literature</span>
+                  <span class="tag">Analysis</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="content-card blog-item"
+            data-category="creativity"
+            data-title="overcoming writers block"
+            data-author="david kim"
+          >
+            <div class="card-header">
+              <h3 class="card-title">Overcoming Writer's Block</h3>
+              <div class="card-meta">
+                <i class="fas fa-calendar"></i> Dec 22, 2024 |
+                <i class="fas fa-user"></i> David Kim |
+                <i class="fas fa-clock"></i> 6 min read
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                Practical strategies and techniques to break through creative
+                barriers and maintain consistent writing productivity.
+              </p>
+              <div class="card-actions">
+                <a
+                  href="pdfs/writers-block.pdf"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                >
+                  <i class="fas fa-file-pdf"></i> Read PDF
+                </a>
+                <div>
+                  <span class="tag">Creativity</span>
+                  <span class="tag">Tips</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="content-card blog-item"
+            data-category="interviews"
+            data-title="bestselling author interview"
+            data-author="sarah white"
+          >
+            <div class="card-header">
+              <h3 class="card-title">Interview with Bestselling Author</h3>
+              <div class="card-meta">
+                <i class="fas fa-calendar"></i> Dec 18, 2024 |
+                <i class="fas fa-user"></i> Sarah White |
+                <i class="fas fa-clock"></i> 15 min read
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                An exclusive conversation with New York Times bestselling author
+                about their writing process, inspiration, and industry insights.
+              </p>
+              <div class="card-actions">
+                <a
+                  href="pdfs/author-interview.pdf"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                >
+                  <i class="fas fa-file-pdf"></i> Read PDF
+                </a>
+                <div>
+                  <span class="tag">Interviews</span>
+                  <span class="tag">Exclusive</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="content-card blog-item"
+            data-category="industry"
+            data-title="self publishing guide"
+            data-author="alex brown"
+          >
+            <div class="card-header">
+              <h3 class="card-title">Complete Self-Publishing Guide</h3>
+              <div class="card-meta">
+                <i class="fas fa-calendar"></i> Dec 15, 2024 |
+                <i class="fas fa-user"></i> Alex Brown |
+                <i class="fas fa-clock"></i> 20 min read
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                Everything you need to know about self-publishing, from
+                manuscript preparation to marketing strategies and platform
+                selection.
+              </p>
+              <div class="card-actions">
+                <a
+                  href="pdfs/self-publishing.pdf"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                >
+                  <i class="fas fa-file-pdf"></i> Read PDF
+                </a>
+                <div>
+                  <span class="tag">Industry</span>
+                  <span class="tag">Guide</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="content-card blog-item"
+            data-category="reviews"
+            data-title="book review contemporary fiction"
+            data-author="lisa chen"
+          >
+            <div class="card-header">
+              <h3 class="card-title">Contemporary Fiction Review</h3>
+              <div class="card-meta">
+                <i class="fas fa-calendar"></i> Dec 12, 2024 |
+                <i class="fas fa-user"></i> Lisa Chen |
+                <i class="fas fa-clock"></i> 10 min read
+              </div>
+            </div>
+            <div class="card-body">
+              <p class="card-description">
+                Critical analysis of recent releases in contemporary fiction,
+                highlighting standout works and emerging literary voices.
+              </p>
+              <div class="card-actions">
+                <a
+                  href="pdfs/fiction-review.pdf"
+                  class="btn btn-primary btn-sm"
+                  target="_blank"
+                >
+                  <i class="fas fa-file-pdf"></i> Read PDF
+                </a>
+                <div>
+                  <span class="tag">Reviews</span>
+                  <span class="tag">Fiction</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Add more blog cards here -->
+          <!-- You can generate these dynamically -->
+        </div>
+
+        <!-- Load More Button -->
+        <div style="text-align: center; margin-top: 3rem">
+          <button class="btn btn-outline" id="load-more-btn">
+            <i class="fas fa-plus"></i> Load More Articles
+          </button>
+        </div>
+
+        <!-- Pagination -->
+        <div class="pagination" style="margin-top: 2rem">
+          <div class="page-item">
+            <a href="#" class="page-link" id="prev-page">
+              <i class="fas fa-chevron-left"></i>
+            </a>
+          </div>
+          <div class="page-item active">
+            <a href="#" class="page-link">1</a>
+          </div>
+          <div class="page-item">
+            <a href="#" class="page-link">2</a>
+          </div>
+          <div class="page-item">
+            <a href="#" class="page-link">3</a>
+          </div>
+          <div class="page-item">
+            <a href="#" class="page-link">...</a>
+          </div>
+          <div class="page-item">
+            <a href="#" class="page-link">10</a>
+          </div>
+          <div class="page-item">
+            <a href="#" class="page-link" id="next-page">
+              <i class="fas fa-chevron-right"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter Subscription -->
+    <section
+      class="section"
+      style="
+        background: var(--gradient-primary);
+        color: white;
+        text-align: center;
+      "
+    >
+      <div class="container">
+        <h2 style="color: white; margin-bottom: 1rem">Stay Updated</h2>
+        <p style="margin-bottom: 2rem; opacity: 0.9">
+          Subscribe to our newsletter for the latest literary insights and blog
+          updates
+        </p>
+        <div style="max-width: 500px; margin: 0 auto; display: flex; gap: 1rem">
+          <input
+            type="email"
+            placeholder="Enter your email address"
+            style="
+              flex: 1;
+              padding: 1rem;
+              border: none;
+              border-radius: 8px;
+              font-size: 1rem;
+            "
+          />
+          <button
+            class="btn btn-primary"
+            style="background: white; color: var(--primary-color)"
+          >
+            <i class="fas fa-paper-plane"></i> Subscribe
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Upload Your Blog Section -->
+    <section class="section" style="background: var(--bg-secondary)">
+      <div class="container">
+        <h2 class="section-title">Share Your Story</h2>
+        <p class="section-subtitle">
+          Have a blog or article you'd like to contribute? We'd love to feature
+          your work.
+        </p>
+
+        <div class="pdf-upload upload-area" id="blog-upload">
+          <div class="upload-progress" id="upload-progress">
+            <div>
+              <i class="fas fa-cloud-upload-alt fa-2x"></i>
+              <p>Uploading your blog...</p>
+            </div>
+          </div>
+          <input
+            type="file"
+            id="blog-file"
+            class="upload-input"
+            accept=".pdf,.doc,.docx"
+            multiple
+          />
+          <label for="blog-file" class="upload-label">
+            <i class="fas fa-cloud-upload-alt"></i>
+            Upload Your Blog/Article
+          </label>
+          <p style="margin-top: 1rem; color: var(--text-secondary)">
+            Accepted formats: PDF, DOC, DOCX (Max 10MB per file)
+          </p>
+        </div>
+
+        <div class="alert alert-info" style="margin-top: 2rem">
+          <i class="fas fa-info-circle"></i>
+          <strong>Submission Guidelines:</strong> Please ensure your content is
+          original, well-written, and relevant to our literary community. All
+          submissions are reviewed before publication.
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Literary Haven</h4>
+            <p>
+              Your premier destination for literary excellence. We craft stories
+              that inspire, educate, and entertain readers around the world.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link" title="Medium">
+                <i class="fab fa-medium"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Content</h4>
+            <ul class="footer-links">
+              <li><a href="blogs.html">Latest Blogs</a></li>
+              <li><a href="poetries.html">Poetry Collection</a></li>
+              <li><a href="stories.html">Short Stories</a></li>
+              <li><a href="novels.html">Novels</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="services.html">Writing Services</a></li>
+              <li><a href="services.html">Editorial Services</a></li>
+              <li><a href="services.html">Content Creation</a></li>
+              <li><a href="services.html">Workshops</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul class="footer-links">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li>
+                <a href="#" onclick="showModal('newsletter-modal')"
+                  >Newsletter</a
+                >
+              </li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Literary Haven. All rights reserved. | Designed with
+            passion for literature.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" title="Back to Top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Newsletter Modal -->
+    <div class="modal" id="newsletter-modal">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title">Subscribe to Our Newsletter</h3>
+          <button class="modal-close" onclick="hideModal('newsletter-modal')">
+            <i class="fas fa-times"></i>
+          </button>
+        </div>
+        <div style="padding: 1rem 0">
+          <p>
+            Get the latest literary insights, blog updates, and exclusive
+            content delivered to your inbox.
+          </p>
+          <div class="form-group">
+            <label class="form-label">Email Address</label>
+            <input
+              type="email"
+              class="form-input"
+              placeholder="your.email@example.com"
+            />
+          </div>
+          <div class="form-group">
+            <label style="display: flex; align-items: center; gap: 0.5rem">
+              <input type="checkbox" checked /> I agree to receive newsletters
+              and updates
+            </label>
+          </div>
+          <button class="btn btn-primary" style="width: 100%">
+            <i class="fas fa-paper-plane"></i> Subscribe Now
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      // Enhanced JavaScript functionality for blogs.html
+
+      // Menu & Navigation
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      const header = document.getElementById("header");
+      const backToTop = document.getElementById("back-to-top");
+
+      // Menu toggle functionality
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+      });
+
+      // Close menu when clicking outside
+      document.addEventListener("click", (e) => {
+        if (!menuToggle.contains(e.target) && !navMenu.contains(e.target)) {
+          navMenu.classList.remove("active");
+          menuToggle.classList.remove("active");
+        }
+      });
+
+      // Header scroll effect and back to top
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+          backToTop.classList.add("visible");
+        } else {
+          header.classList.remove("scrolled");
+          backToTop.classList.remove("visible");
+        }
+      });
+
+      // Back to top functionality
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // Search Functionality
+      const searchInput = document.getElementById("blog-search");
+      const blogItems = document.querySelectorAll(".blog-item");
+
+      searchInput.addEventListener("input", (e) => {
+        const searchTerm = e.target.value.toLowerCase();
+
+        blogItems.forEach((item) => {
+          const title = item.dataset.title || "";
+          const author = item.dataset.author || "";
+          const category = item.dataset.category || "";
+          const description =
+            item
+              .querySelector(".card-description")
+              ?.textContent.toLowerCase() || "";
+
+          if (
+            title.includes(searchTerm) ||
+            author.includes(searchTerm) ||
+            category.includes(searchTerm) ||
+            description.includes(searchTerm)
+          ) {
+            item.style.display = "block";
+            item.classList.add("animate-fadeInUp");
+          } else {
+            item.style.display = "none";
+            item.classList.remove("animate-fadeInUp");
+          }
+        });
+
+        // Update results count
+        updateResultsCount();
+      });
+
+      // Clear search on escape key
+      searchInput.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") {
+          searchInput.value = "";
+          searchInput.dispatchEvent(new Event("input"));
+        }
+      });
+
+      // Filter Functionality
+      const filterBtns = document.querySelectorAll(".filter-btn");
+
+      filterBtns.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          // Remove active class from all buttons
+          filterBtns.forEach((b) => {
+            b.classList.remove("active", "tag-primary");
+          });
+
+          // Add active class to clicked button
+          btn.classList.add("active", "tag-primary");
+
+          const filter = btn.dataset.filter;
+
+          blogItems.forEach((item) => {
+            if (filter === "all" || item.dataset.category === filter) {
+              item.style.display = "block";
+              item.classList.add("animate-fadeInUp");
+            } else {
+              item.style.display = "none";
+              item.classList.remove("animate-fadeInUp");
+            }
+          });
+
+          // Clear search when filter is applied
+          searchInput.value = "";
+          updateResultsCount();
+        });
+      });
+
+      // Results count update function
+      function updateResultsCount() {
+        const visibleItems = Array.from(blogItems).filter(
+          (item) => item.style.display !== "none"
+        );
+
+        // Create or update results indicator
+        let resultsIndicator = document.getElementById("results-indicator");
+        if (!resultsIndicator) {
+          resultsIndicator = document.createElement("div");
+          resultsIndicator.id = "results-indicator";
+          resultsIndicator.style.cssText = `
+      text-align: center;
+      margin: 1rem 0;
+      padding: 0.5rem;
+      color: var(--text-secondary);
+      font-size: 0.9rem;
+    `;
+          document
+            .getElementById("blog-grid")
+            .parentNode.insertBefore(
+              resultsIndicator,
+              document.getElementById("blog-grid")
+            );
+        }
+
+        resultsIndicator.textContent = `Showing ${visibleItems.length} of ${blogItems.length} articles`;
+      }
+
+      // File Upload Functionality
+      const uploadArea = document.getElementById("blog-upload");
+      const fileInput = document.getElementById("blog-file");
+      const uploadProgress = document.getElementById("upload-progress");
+
+      // Drag and drop events
+      uploadArea.addEventListener("dragover", (e) => {
+        e.preventDefault();
+        uploadArea.classList.add("dragover");
+      });
+
+      uploadArea.addEventListener("dragleave", (e) => {
+        e.preventDefault();
+        uploadArea.classList.remove("dragover");
+      });
+
+      uploadArea.addEventListener("drop", (e) => {
+        e.preventDefault();
+        uploadArea.classList.remove("dragover");
+        const files = e.dataTransfer.files;
+        handleFileUpload(files);
+      });
+
+      // File input change event
+      fileInput.addEventListener("change", (e) => {
+        handleFileUpload(e.target.files);
+      });
+
+      // File upload handler
+      function handleFileUpload(files) {
+        if (files.length === 0) return;
+
+        // Validate files
+        const validFiles = Array.from(files).filter((file) => {
+          const validTypes = [
+            "application/pdf",
+            "application/msword",
+            "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
+          ];
+          const maxSize = 10 * 1024 * 1024; // 10MB
+
+          if (!validTypes.includes(file.type)) {
+            showAlert("error", `${file.name} is not a supported file type.`);
+            return false;
+          }
+
+          if (file.size > maxSize) {
+            showAlert("error", `${file.name} is too large. Max size is 10MB.`);
+            return false;
+          }
+
+          return true;
+        });
+
+        if (validFiles.length === 0) return;
+
+        // Show upload progress
+        uploadProgress.classList.add("active");
+
+        // Simulate upload progress
+        let progress = 0;
+        const progressInterval = setInterval(() => {
+          progress += Math.random() * 30;
+          if (progress > 100) {
+            progress = 100;
+            clearInterval(progressInterval);
+
+            setTimeout(() => {
+              uploadProgress.classList.remove("active");
+
+              // Show success message
+              showAlert(
+                "success",
+                `Successfully uploaded ${validFiles.length} file(s). We'll review your submission within 48 hours.`
+              );
+
+              // Reset file input
+              fileInput.value = "";
+            }, 500);
+          }
+        }, 200);
+      }
+
+      // Alert system
+      function showAlert(type, message) {
+        const existingAlert = document.querySelector(".alert");
+        if (existingAlert) {
+          existingAlert.remove();
+        }
+
+        const alert = document.createElement("div");
+        alert.className = `alert alert-${type}`;
+        alert.innerHTML = `
+    <i class="fas fa-${
+      type === "success" ? "check-circle" : "exclamation-triangle"
+    }"></i>
+    <strong>${type === "success" ? "Success!" : "Error!"}</strong> ${message}
+    <button class="alert-close" onclick="this.parentElement.remove()">
+      <i class="fas fa-times"></i>
+    </button>
+  `;
+
+        uploadArea.parentNode.insertBefore(alert, uploadArea.nextSibling);
+
+        // Auto-remove after 5 seconds
+        setTimeout(() => {
+          if (alert.parentNode) {
+            alert.remove();
+          }
+        }, 5000);
+      }
+
+      // Load More Functionality
+      const loadMoreBtn = document.getElementById("load-more-btn");
+      const loadingIndicator = document.getElementById("loading-indicator");
+      let currentPage = 1;
+      const itemsPerPage = 6;
+
+      // Generate additional blog items dynamically
+      function generateAdditionalBlogs() {
+        const additionalBlogs = [
+          {
+            title: "The Art of Storytelling in Digital Age",
+            author: "Emma Watson",
+            date: "Dec 8, 2024",
+            category: "writing",
+            description:
+              "Exploring how digital platforms are changing the way we tell and consume stories.",
+            readTime: "7 min read",
+          },
+          {
+            title: "Poetry in the Modern World",
+            author: "James Morrison",
+            date: "Dec 5, 2024",
+            category: "literature",
+            description:
+              "A deep dive into contemporary poetry and its impact on modern literature.",
+            readTime: "9 min read",
+          },
+          {
+            title: "Building Your Author Platform",
+            author: "Rachel Green",
+            date: "Dec 1, 2024",
+            category: "industry",
+            description:
+              "Essential strategies for authors to build their online presence and connect with readers.",
+            readTime: "11 min read",
+          },
+          {
+            title: "Creative Writing Exercises",
+            author: "Mike Thompson",
+            date: "Nov 28, 2024",
+            category: "creativity",
+            description:
+              "Daily exercises to spark creativity and improve your writing skills.",
+            readTime: "5 min read",
+          },
+          {
+            title: "Best Books of 2024",
+            author: "Anna Davis",
+            date: "Nov 25, 2024",
+            category: "reviews",
+            description:
+              "Our curated list of the year's most impactful and memorable books.",
+            readTime: "13 min read",
+          },
+          {
+            title: "Interview with Poetry Slam Champion",
+            author: "Tom Wilson",
+            date: "Nov 22, 2024",
+            category: "interviews",
+            description:
+              "Exclusive conversation with the national poetry slam champion about performance and writing.",
+            readTime: "16 min read",
+          },
+        ];
+
+        const blogGrid = document.getElementById("blog-grid");
+
+        additionalBlogs.forEach((blog, index) => {
+          const blogCard = document.createElement("div");
+          blogCard.className = "content-card blog-item hidden";
+          blogCard.setAttribute("data-category", blog.category);
+          blogCard.setAttribute("data-title", blog.title.toLowerCase());
+          blogCard.setAttribute("data-author", blog.author.toLowerCase());
+
+          blogCard.innerHTML = `
+      <div class="card-header">
+        <h3 class="card-title">${blog.title}</h3>
+        <div class="card-meta">
+          <i class="fas fa-calendar"></i> ${blog.date} |
+          <i class="fas fa-user"></i> ${blog.author} |
+          <i class="fas fa-clock"></i> ${blog.readTime}
+        </div>
+      </div>
+      <div class="card-body">
+        <p class="card-description">${blog.description}</p>
+        <div class="card-actions">
+          <a href="pdfs/${blog.title
+            .toLowerCase()
+            .replace(/[^a-z0-9]/g, "-")}.pdf" 
+             class="btn btn-primary btn-sm" target="_blank">
+            <i class="fas fa-file-pdf"></i> Read PDF
+          </a>
+          <div>
+            <span class="tag">${
+              blog.category.charAt(0).toUpperCase() + blog.category.slice(1)
+            }</span>
+          </div>
+        </div>
+      </div>
+    `;
+
+          blogGrid.appendChild(blogCard);
+        });
+      }
+
+      // Initialize additional blogs
+      generateAdditionalBlogs();
+
+      // Load more button functionality
+      loadMoreBtn.addEventListener("click", () => {
+        loadingIndicator.style.display = "block";
+        loadMoreBtn.style.display = "none";
+
+        setTimeout(() => {
+          const hiddenItems = document.querySelectorAll(".blog-item.hidden");
+          const itemsToShow = Math.min(itemsPerPage, hiddenItems.length);
+
+          for (let i = 0; i < itemsToShow; i++) {
+            hiddenItems[i].classList.remove("hidden");
+            hiddenItems[i].classList.add("animate-fadeInUp");
+          }
+
+          loadingIndicator.style.display = "none";
+
+          // Show load more button if there are still hidden items
+          if (document.querySelectorAll(".blog-item.hidden").length > 0) {
+            loadMoreBtn.style.display = "block";
+          } else {
+            loadMoreBtn.style.display = "none";
+          }
+
+          currentPage++;
+          updateResultsCount();
+        }, 1000);
+      });
+
+      // Pagination functionality
+      const paginationLinks = document.querySelectorAll(".page-link");
+      const prevPageBtn = document.getElementById("prev-page");
+      const nextPageBtn = document.getElementById("next-page");
+
+      paginationLinks.forEach((link, index) => {
+        link.addEventListener("click", (e) => {
+          e.preventDefault();
+
+          if (link.id === "prev-page" || link.id === "next-page") {
+            return; // Handle these separately
+          }
+
+          // Remove active class from all pagination items
+          document.querySelectorAll(".page-item").forEach((item) => {
+            item.classList.remove("active");
+          });
+
+          // Add active class to clicked item
+          link.parentElement.classList.add("active");
+
+          // Scroll to top of blog section
+          document
+            .getElementById("all-blogs")
+            .scrollIntoView({ behavior: "smooth" });
+        });
+      });
+
+      // Modal functionality
+      function showModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.add("active");
+          document.body.style.overflow = "hidden";
+        }
+      }
+
+      function hideModal(modalId) {
+        const modal = document.getElementById(modalId);
+        if (modal) {
+          modal.classList.remove("active");
+          document.body.style.overflow = "auto";
+        }
+      }
+
+      // Close modal when clicking outside
+      document.addEventListener("click", (e) => {
+        if (e.target.classList.contains("modal")) {
+          e.target.classList.remove("active");
+          document.body.style.overflow = "auto";
+        }
+      });
+
+      // Newsletter subscription functionality
+      const newsletterForm = document.querySelector(
+        "#newsletter-modal input[type='email']"
+      );
+      const subscribeBtn = document.querySelector(
+        "#newsletter-modal .btn-primary"
+      );
+
+      if (subscribeBtn) {
+        subscribeBtn.addEventListener("click", () => {
+          const email = newsletterForm.value.trim();
+
+          if (!email) {
+            showAlert("error", "Please enter your email address.");
+            return;
+          }
+
+          if (!isValidEmail(email)) {
+            showAlert("error", "Please enter a valid email address.");
+            return;
+          }
+
+          // Simulate newsletter subscription
+          subscribeBtn.innerHTML =
+            '<i class="fas fa-spinner fa-spin"></i> Subscribing...';
+          subscribeBtn.disabled = true;
+
+          setTimeout(() => {
+            showAlert(
+              "success",
+              "Thank you for subscribing! You'll receive our latest updates."
+            );
+            hideModal("newsletter-modal");
+            newsletterForm.value = "";
+            subscribeBtn.innerHTML =
+              '<i class="fas fa-paper-plane"></i> Subscribe Now';
+            subscribeBtn.disabled = false;
+          }, 2000);
+        });
+      }
+
+      // Email validation function
+      function isValidEmail(email) {
+        const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        return emailRegex.test(email);
+      }
+
+      // Smooth scrolling for anchor links
+      document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener("click", function (e) {
+          e.preventDefault();
+          const target = document.querySelector(this.getAttribute("href"));
+          if (target) {
+            target.scrollIntoView({
+              behavior: "smooth",
+              block: "start",
+            });
+          }
+        });
+      });
+
+      // Initialize page
+      document.addEventListener("DOMContentLoaded", () => {
+        // Initialize results count
+        updateResultsCount();
+
+        // Add animation classes to visible elements
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("animate-fadeInUp");
+            }
+          });
+        });
+
+        // Observe all blog items
+        blogItems.forEach((item) => {
+          observer.observe(item);
+        });
+
+        // Initialize stats animation
+        const statsObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const statNumbers = entry.target.querySelectorAll(".stat-number");
+              statNumbers.forEach((stat) => {
+                animateCounter(stat);
+              });
+            }
+          });
+        });
+
+        const statsSection = document.querySelector(".stats-grid");
+        if (statsSection) {
+          statsObserver.observe(statsSection);
+        }
+      });
+
+      // Counter animation for statistics
+      function animateCounter(element) {
+        const target = parseInt(element.textContent.replace(/\D/g, ""));
+        const suffix = element.textContent.replace(/\d/g, "");
+        let current = 0;
+        const increment = target / 100;
+        const duration = 2000;
+        const stepTime = duration / 100;
+
+        const timer = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            current = target;
+            clearInterval(timer);
+          }
+          element.textContent = Math.floor(current) + suffix;
+        }, stepTime);
+      }
+
+      // Keyboard navigation
+      document.addEventListener("keydown", (e) => {
+        // Close modals with Escape key
+        if (e.key === "Escape") {
+          const activeModal = document.querySelector(".modal.active");
+          if (activeModal) {
+            activeModal.classList.remove("active");
+            document.body.style.overflow = "auto";
+          }
+        }
+
+        // Search focus with Ctrl+K
+        if (e.ctrlKey && e.key === "k") {
+          e.preventDefault();
+          searchInput.focus();
+        }
+      });
+
+      // Performance optimization: Debounce search
+      function debounce(func, wait) {
+        let timeout;
+        return function executedFunction(...args) {
+          const later = () => {
+            clearTimeout(timeout);
+            func(...args);
+          };
+          clearTimeout(timeout);
+          timeout = setTimeout(later, wait);
+        };
+      }
+
+      // Apply debounce to search
+      const debouncedSearch = debounce((e) => {
+        const searchTerm = e.target.value.toLowerCase();
+
+        blogItems.forEach((item) => {
+          const title = item.dataset.title || "";
+          const author = item.dataset.author || "";
+          const category = item.dataset.category || "";
+          const description =
+            item
+              .querySelector(".card-description")
+              ?.textContent.toLowerCase() || "";
+
+          if (
+            title.includes(searchTerm) ||
+            author.includes(searchTerm) ||
+            category.includes(searchTerm) ||
+            description.includes(searchTerm)
+          ) {
+            item.style.display = "block";
+            item.classList.add("animate-fadeInUp");
+          } else {
+            item.style.display = "none";
+            item.classList.remove("animate-fadeInUp");
+          }
+        });
+
+        updateResultsCount();
+      }, 300);
+
+      // Replace the original search event listener with debounced version
+      searchInput.removeEventListener("input", searchInput.oninput);
+      searchInput.addEventListener("input", debouncedSearch);
+    </script>
+  </body>
+</html>

@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Literary Haven - Frequently Asked Questions</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <style>
+      .faq-item {
+        border: 1px solid var(--border-color);
+        border-radius: var(--radius-md);
+        margin-bottom: var(--spacing-md);
+        padding: var(--spacing-md);
+        background: var(--bg-secondary);
+        transition: var(--transition-normal);
+      }
+
+      .faq-question {
+        cursor: pointer;
+        font-weight: 600;
+        color: var(--primary-color);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .faq-answer {
+        display: none;
+        margin-top: var(--spacing-sm);
+        color: var(--text-secondary);
+        line-height: 1.7;
+      }
+
+      .faq-item.active .faq-answer {
+        display: block;
+      }
+
+      .faq-item.active .faq-question i {
+        transform: rotate(180deg);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header" id="header">
+      <nav class="navbar container">
+        <a href="index.html" class="logo">
+          <img
+            src="https://images.unsplash.com/photo-1481627834876-b7833e8f5570?w=100&h=100&fit=crop&crop=center"
+            class="logo-img"
+            alt="Logo"
+          />
+          Literary Haven
+        </a>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="blogs.html" class="nav-link">Blogs</a></li>
+          <li><a href="poetries.html" class="nav-link">Poetry</a></li>
+          <li><a href="stories.html" class="nav-link">Stories</a></li>
+          <li><a href="novels.html" class="nav-link">Novels</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="faq.html" class="nav-link active">FAQ</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+        </ul>
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span><span></span><span></span>
+        </div>
+      </nav>
+    </header>
+
+    <!-- FAQ Section -->
+    <section class="section" style="padding-top: 100px">
+      <div class="container">
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-subtitle">
+          Find answers to the most common questions about our platform,
+          services, and community
+        </p>
+
+        <div class="search-container">
+          <input
+            type="text"
+            class="search-input"
+            id="faq-search"
+            placeholder="Search a question..."
+          />
+          <i class="fas fa-search search-icon"></i>
+        </div>
+
+        <div id="faq-list">
+          <!-- FAQ Item -->
+          <div class="faq-item">
+            <div class="faq-question">
+              How can I submit my blog or poetry to Literary Haven?
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Simply navigate to the "Share Your Work" section on the homepage
+              and upload your content in PDF format. We review all submissions
+              before publishing.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Do you offer custom website development?
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Yes! Our Website Building service offers fully customized,
+              responsive websites for authors, educators, and professionals.
+              Visit the Services page to learn more or request a quote.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Can I hire someone from Literary Haven to write content for my
+              business?
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Absolutely. Our content creators specialize in professional blog
+              posts, articles, and web copy tailored to your brand. Check out
+              our Content Creation service.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Is Literary Haven free to use?
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Yes, accessing and reading blogs, poems, stories, and novels on
+              Literary Haven is completely free. Some services like custom
+              writing or development are paid.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              How do I contact support for technical or account issues?
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              You can visit our <a href="contact.html">Contact Page</a> and fill
+              out the form. We typically respond within 24–48 hours.
+            </div>
+          </div>
+
+          <div class="faq-item">
+            <div class="faq-question">
+              Can I collaborate as an educator or workshop speaker?
+              <i class="fas fa-chevron-down"></i>
+            </div>
+            <div class="faq-answer">
+              Yes! We welcome educators, mentors, and subject matter experts.
+              Please reach out through our contact page to discuss
+              opportunities.
+            </div>
+          </div>
+        </div>
+
+        <!-- No Results Message -->
+        <p
+          class="text-center mt-4"
+          id="no-results"
+          style="display: none; color: var(--text-secondary)"
+        >
+          🤔 No matching questions found.
+          <a href="contact.html">Contact us</a> and we’ll assist you directly.
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h4>Literary Haven</h4>
+            <p>
+              Your premier destination for literary excellence. We craft stories
+              that inspire, educate, and entertain readers around the world.
+            </p>
+            <div class="social-links">
+              <a href="#" class="social-link" title="Facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#" class="social-link" title="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#" class="social-link" title="Instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+              </a>
+              <a href="#" class="social-link" title="Medium">
+                <i class="fab fa-medium"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="footer-section">
+            <h4>Quick Links</h4>
+            <ul class="footer-links">
+              <li><a href="blogs.html">Blogs</a></li>
+              <li><a href="poetries.html">Poetry</a></li>
+              <li><a href="stories.html">Stories</a></li>
+              <li><a href="novels.html">Novels</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Services</h4>
+            <ul class="footer-links">
+              <li><a href="services.html">Writing Services</a></li>
+              <li><a href="services.html">Editorial Services</a></li>
+              <li><a href="services.html">Content Creation</a></li>
+              <li><a href="services.html">Workshops</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-section">
+            <h4>Support</h4>
+            <ul class="footer-links">
+              <li><a href="faq.html">FAQ</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+              <li><a href="contact-us.html">Get In Touch</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Literary Haven. All rights reserved. | Designed with
+            passion for literature.
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" title="Back to Top">
+      <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+      // Menu & Scroll
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
+      const header = document.getElementById("header");
+      const backToTop = document.getElementById("back-to-top");
+
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+        menuToggle.classList.toggle("active");
+      });
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 100) {
+          header.classList.add("scrolled");
+          backToTop.classList.add("visible");
+        } else {
+          header.classList.remove("scrolled");
+          backToTop.classList.remove("visible");
+        }
+      });
+
+      backToTop.addEventListener("click", () => {
+        window.scrollTo({ top: 0, behavior: "smooth" });
+      });
+
+      // Accordion Toggle
+      document.querySelectorAll(".faq-question").forEach((question) => {
+        question.addEventListener("click", () => {
+          question.parentElement.classList.toggle("active");
+        });
+      });
+
+      // FAQ Search
+      const searchInput = document.getElementById("faq-search");
+      const faqItems = document.querySelectorAll(".faq-item");
+      const noResults = document.getElementById("no-results");
+
+      searchInput.addEventListener("input", () => {
+        const query = searchInput.value.toLowerCase();
+        let visibleCount = 0;
+
+        faqItems.forEach((item) => {
+          const text = item.textContent.toLowerCase();
+          if (text.includes(query)) {
+            item.style.display = "block";
+            visibleCount++;
+          } else {
+            item.style.display = "none";
+          }
+        });
+
+        noResults.style.display = visibleCount === 0 ? "block" : "none";
+      });
+    </script>
+  </body>
+</html>
